@@ -1,0 +1,139 @@
+#account{
+    display: flex;
+    flex-direction: row;
+}
+#account h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    font-family: BritanicBoldRegular;
+}
+#account #divContainer{
+    margin: 120px;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    
+}
+#account .boxRedirect {      
+    width: 186px;
+    height: 186px;
+    margin: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #7C7C7C;
+    gap: 24px;
+}
+#account .boxRedirect:hover {
+    color: #12486B;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+#account .boxRedirect:hover #heartIconRedirect{
+    fill: #E72828;
+}
+#account .boxRedirect:hover .iconRedirect{
+    fill: #12486B;
+}
+#account #boxAction{
+    width: 186px;
+    height: 120px;
+    margin: 8px;
+    text-align: left;
+    line-height: 40px;
+    padding: 15px 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+#account #boxAction > a {
+    font-size: 16px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#account #boxAction > #supprimer{
+    color: #E72828;
+}
+
+#account .submitBtn{
+    display: none;
+}
+#account #modalModif{
+    width: 539px;
+    padding:5vh 2vw;
+    padding-bottom: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    border: solid 1px  black;
+    border-radius: 20px;
+}
+#account #modalModif #phoneModif,#emailModif,#first_nameModif,#last_nameModif{
+    margin-left: 100px;
+    cursor: pointer;
+}
+
+#account #ModalSuppression{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+#account h2{
+    font-size: 24px;
+    font-family: BritanicBoldRegular;
+}
+#account label{
+    font-size:20px;
+    font-family: BritanicBoldRegular;
+}
+#account .logoInBox{
+    width: 63px;
+    height: 63px;
+}
+#account .formInModal{
+    margin: 25px 0px;
+}
+#account .formInModal  input[type=text],input[type=password],input[type=email], input[type=tel]{
+    border: none;
+    width: 60%;
+    margin-bottom: 12px;
+}
+#account .formInModal input[type=button]{
+    border: none;
+    text-decoration: underline;
+}
+#account .formInModal input[type=submit]{
+    width: 140px;
+    height: 42px;
+}
+#account #containerPassword{
+    display: none;
+}
+#account #containerPassword label{
+    font-size: 14px;
+    font-family: Lato;
+}
+#account #containerPassword input[type=password]{
+    border: solid 1px  black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#account #passwordModif{
+    margin-left: 400px;
+    cursor: pointer;
+}
+
+#account #divInfoPerso{
+    margin-top: 120px;
+}
